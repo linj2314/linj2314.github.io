@@ -23,24 +23,26 @@
             <div class="col-2"></div>
             <div class="col-1 text-danger-emphasis ">
                 <nav id="sidenav" class="nav nav-pills flex-column position-fixed">
-                    <a class="nav-link" href="#item-1">Intro</a>
-                    <a class="nav-link" href="#item-2">Education & Coursework</a>
-                    <a class="nav-link" href="#item-3">Projects</a>
+                    <a class="nav-link" href="#Intro">Intro</a>
+                    <a class="nav-link" href="#Education">Education & Coursework</a>
+                    <a class="nav-link" href="#Projects">Projects</a>
                 </nav>
             </div>
             <div class="col-1 border-end"></div>
             <div class="col-6">
                 <div data-bs-spy="scroll" data-bs-target="#sidenav" data-bs-smooth-scroll="true">
-                    <div id="item-1">
+                    <div id="Intro">
                         <h1>Jason Lin</h1>
                         <p>Ann Arbor, Michigan</p>
-                        <p>lanon@umich.edu</p>
-                        <p>resume</p>
+                        <p><a href="mailto:lanon@umich.edu">lanon@umich.edu</a></p>
+                        <p><a href="https://www.linkedin.com/in/jason-lin-810a8922a/" target="_blank">linkedin</a></p>
+                        <p><a href="RESUME.pdf" target="_blank">RESUME</a></p>
+                        <br>
                         <br>
                     </div>
-                    <div id="item-2 ">
+                    <div id="Education">
                         <h2>Education</h2>
-                        <div class="border border-primary-subtle rounded">
+                        <div class="border border-warning-subtle rounded">
                             <h3>University of Michigan - Ann Arbor</h3>
                             <h5>College of Engineering</h5>
                             <ul>
@@ -57,16 +59,16 @@
                         <br>
                         <br>
                     </div>
-                    <div id="item-3">
+                    <div id="Projects">
                         <h2>Projects</h2>
-                        <div class="row row-cols-2">
-                            <div class="col p-3">
+                        <div class="row row-cols-2 g-4">
+                            <div class="col">
                                 <div class="border border-primary-subtle rounded">
                                     <div class="row">
                                         <div class="col">
                                             <h4>Nutrition MERN</h4>
                                         </div>
-                                        <div class="col text-end">
+                                        <div class="col-2 text-end">
                                             <i class="fa fa-external-link" style="font-size: 30px;"></i>
                                         </div>
                                     </div>
@@ -77,59 +79,66 @@
                                          then finally adding it to a list with other foods consumed. 
                                     </p>
                                     <p>Skills: MongoDB, ExpressJS, ReactJS, Node.js</p>
+                                    <br>
+                                    <br>
                                 </div>
                             </div>
-                            <div class="col p-3">
+                            <div class="col">
                                 <div class="border border-primary-subtle rounded">
                                     <div class="row">
                                         <div class="col">
                                             <h4>Various Classwork Projects</h4>
                                         </div>
-                                        <div class="col text-end">
+                                        <div class="col-2 text-end">
                                             <i class="fa fa-external-link" style="font-size: 30px;"></i>
                                         </div>
                                     </div>
                                     <p>
-                                        A full-stack application made with MERN (MongoDB, ExpressJS, ReactJS, and Node.js) that
-                                         allows users to look up various foods and track the nutrients in them. Works by first 
-                                         utilizing a search bar to search for food, then selecting the quantity consumed, and 
-                                         then finally adding it to a list with other foods consumed. 
+                                        A collection of projects from my Intro to Programming and Data Structures class. The 
+                                        projects include a fully functional program that allows users to play Euchre, and the 
+                                        implementation of a map using a BST for the purpose of creating a machine learning 
+                                        algorithm that can read posts on Piazza and tag them with the correct subject. 
                                     </p>
-                                    <p>Skills: MongoDB, ExpressJS, ReactJS, Node.js</p>
+                                    <p>Skills: C/C++, Various Data Structures, Recursion, Inheritance, Pointers and References,
+                                        Templates, Dynamic Memory Management, etc. 
+                                    </p>
                                 </div>
                             </div>
-                            <div class="col p-3">
+                            <div class="col">
                                 <div class="border border-primary-subtle rounded">
                                     <div class="row">
                                         <div class="col">
                                             <h4>Arbitrage Bot</h4>
                                         </div>
-                                        <div class="col text-end">
+                                        <div class="col-2 text-end">
                                             <i class="fa fa-external-link" style="font-size: 30px;"></i>
                                         </div>
                                     </div>
                                     <p>
-                                        A full-stack application made with MERN (MongoDB, ExpressJS, ReactJS, and Node.js) that
-                                         allows users to look up various foods and track the nutrients in them. Works by first 
-                                         utilizing a search bar to search for food, then selecting the quantity consumed, and 
-                                         then finally adding it to a list with other foods consumed. 
+                                        A python script that performs arbitrage between BTC/USD, BTC/ETH, and ETH/USD using 
+                                        Alpaca's Trading API and asynchronous programming. Receives real time quote data from
+                                        Alpaca's Market Data API and performs calculations to determine if arbitrage is appropriate. 
                                     </p>
-                                    <p>Skills: MongoDB, ExpressJS, ReactJS, Node.js</p>
+                                    <p>Skills: Python, APIs, Asynchronous Programming</p>
+                                    <br>
                                 </div>
                             </div>
-                            <div class="col p-3">
+                            <div class="col">
                                 <div class="border border-primary-subtle rounded">
                                     <div class="row">
                                         <div class="col">
                                             <h4>Biopharm Roulette</h4>
                                         </div>
-                                        <div class="col text-end">
+                                        <div class="col-2 text-end">
                                             <i class="fa fa-external-link" style="font-size: 30px;"></i>
                                         </div>
                                     </div>
                                     <p>
-                                        A for-fun project that webscrapes biopharmacy catalyst events from biopharmcatalyst.com
-                                        using Selenium, then short sells those stocks using Alpaca's Trading API. 
+                                        A for-fun project that webscrapes biopharmacy stocks with upcoming catalyst
+                                         events from biopharmcatalyst.com using Selenium, then short sells those stocks
+                                          using Alpaca's Trading API if deemed eligible to be short sold. Only stocks 
+                                          that are in phase 2 of clinical testing and within 3 days of the current 
+                                          date will be short sold. 
                                     </p>
                                     <p>Skills: Python, API, Webscraping</p>
                                 </div>
