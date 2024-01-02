@@ -23,6 +23,10 @@
         #tooltip {
             display: none;
         }
+
+        .border-indigo {
+            border: 1px solid indigo !important;
+        }
     </style>
   </head>
   <body>
@@ -50,7 +54,7 @@
                     </div>
                     <div id="Education">
                         <h2>Education</h2>
-                        <div class="border border-warning-subtle rounded">
+                        <div class="border border-warning-subtle rounded container p-4">
                             <h3>University of Michigan - Ann Arbor</h3>
                             <h5>College of Engineering</h5>
                             <ul>
@@ -58,11 +62,39 @@
                             </ul>
                             <br>
                             <h5>Relevant Coursework:</h5>
-                            <ul>
-                                <li>Discrete Math</li>
-                                <li>Programming and Intro Data Structures</li>
-                                <li>Linear Algebra</li>
-                            </ul>
+                            <div class="row row-cols-2 g-4">
+                                <div class="col">
+                                    <div class="border border-primary-subtle rounded p-3">
+                                        <h5>Discrete Math</h5>
+                                        <ul>
+                                            <li>Recurrence Relations</li>
+                                            <li>Runtime Analysis</li>
+                                            <li>Graphs and Trees</li>
+                                        </ul>
+                                        <br>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="border border-primary-subtle rounded p-3">
+                                        <h5>Programming and Intro Data Structures</h5>
+                                        <ul>
+                                            <li>Inheritance and related subtopics</li>
+                                            <li>Dynamic memory management, deep copies, custom operators</li>
+                                            <li>Recursion</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="border border-primary-subtle rounded p-3">                                        
+                                        <h5>Honors Intro Stats</h5>
+                                        <ul>
+                                            <li>Running simulations and programming in R</li>
+                                            <li>Using R to create data models and visualizations</li>
+                                            <li>Vectorization in R</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <br>
                         <br>
@@ -71,7 +103,7 @@
                         <h2>Projects</h2>
                         <div class="row row-cols-2 g-4">
                             <div class="col">
-                                <div class="border border-primary-subtle rounded">
+                                <div class="border border-indigo rounded">
                                     <div class="row">
                                         <div class="col">
                                             <h4>Nutrition MERN</h4>
@@ -92,7 +124,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="border border-primary-subtle rounded">
+                                <div class="border border-indigo rounded">
                                     <div class="row">
                                         <div class="col">
                                             <h4>Various Classwork Projects</h4>
@@ -129,7 +161,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="border border-primary-subtle rounded">
+                                <div class="border border-indigo rounded">
                                     <div class="row">
                                         <div class="col">
                                             <h4>Arbitrage Bot</h4>
@@ -148,7 +180,7 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="border border-primary-subtle rounded">
+                                <div class="border border-indigo rounded">
                                     <div class="row">
                                         <div class="col">
                                             <h4>Biopharm Roulette</h4>
