@@ -27,6 +27,14 @@
         .border-indigo {
             border: 1px solid indigo !important;
         }
+
+        .border-bottom-indigo {
+            border-bottom: 1px solid indigo !important;
+        }
+
+        button:hover {
+            background-color: rgb(91, 0, 155);
+        }
     </style>
   </head>
   <body>
@@ -200,6 +208,56 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div>
+                        <nav class="nav flex-column border border-indigo">
+                            <button class="nav-link border-0 border-bottom-indigo text-start" onclick="updateState(0)" style="color: white">Nutrition MERN</button>
+                            <button class="nav-link border-0 border-bottom-indigo text-start" onclick="updateState(1)" style="color: white">Various Classwork Projects</button>
+                            <button class="nav-link border-0 border-bottom-indigo text-start" onclick="updateState(2)" style="color: white">Arbitrage Bot</button>
+                            <button class="nav-link border-0 text-start" onclick="updateState(3)" style="color: white">Biopharm Roulette</button>
+                        </nav>
+                        <div class="border">
+                            <p id="content">
+                                A full-stack application made with MERN (MongoDB, ExpressJS, ReactJS, and Node.js) that
+                                allows users to look up various foods and track the nutrients in them. Works by first 
+                                utilizing a search bar to search for food, then selecting the quantity consumed, and 
+                                then finally adding it to a list with other foods consumed. 
+                            </p>
+                            <br>
+                            <p id="skills">Skills: MongoDB, ExpressJS, ReactJS, Node.js</p>
+                        </div>
+                        <script>
+                            function updateState(x) {
+                                const content = document.getElementById("content");
+                                switch(x) {
+                                    case 0:
+                                        content.innerHTML = `A full-stack application made with MERN (MongoDB, ExpressJS, ReactJS, and Node.js) that
+                                                            allows users to look up various foods and track the nutrients in them. Works by first 
+                                                            utilizing a search bar to search for food, then selecting the quantity consumed, and 
+                                                            then finally adding it to a list with other foods consumed. `;
+                                        break;
+                                    case 1:
+                                        content.innerHTML = `A collection of projects from my Intro to Programming and Data Structures class. The 
+                                                            projects include a fully functional program that allows users to play Euchre, and the 
+                                                            implementation of a map using a BST for the purpose of creating a machine learning 
+                                                            algorithm that can read posts on Piazza and tag them with the correct subject. `;
+                                        break;
+                                    case 2:
+                                        content.innerHTML = `A python script that performs arbitrage between BTC/USD, BTC/ETH, and ETH/USD using 
+                                                            Alpaca's Trading API and asynchronous programming. Receives real time quote data from
+                                                            Alpaca's Market Data API and performs calculations to determine if arbitrage is appropriate. `;
+                                        break;
+                                    case 3:
+                                        content.innerHTML = `A for-fun project that webscrapes biopharmacy stocks with upcoming catalyst
+                                                            events from biopharmcatalyst.com using Selenium, then short sells those stocks
+                                                            using Alpaca's Trading API if deemed eligible to be short sold. Only stocks 
+                                                            that are in phase 2 of clinical testing and within 3 days of the current 
+                                                            date will be short sold. `;
+                                        break;
+                                }
+                                
+                            }
+                        </script>
                     </div>
                 </div>
             </div>
