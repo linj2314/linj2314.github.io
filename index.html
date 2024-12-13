@@ -81,7 +81,9 @@
                                         <ul>
                                             <li>Vectors, Heaps, Queues, Linked lists, Trees, and more</li>
                                             <li>Sorting, dynamic programming, back tracking, branch and bound, and more</li>
-                                            <li>4 in depth projects implementing various algorithms with runtime and memory constraints. https://eecs281staff.github.io/eecs281.org/#projects</li>
+                                            <li>
+                                                <a href="https://eecs281staff.github.io/eecs281.org/#projects">4 in depth projects</a> implementing various algorithms with runtime and memory constraints.
+                                            </li>
                                         </ul>
                                         <br>
                                     </div>
@@ -133,20 +135,17 @@
                                 </nav>
                                 <hr style="width: 95%; margin-left: 2.5%; border-width: 2px">
                                 <div class="p-3">
-                                    <h3 id="projtitle">Nutrition MERN</h3>
+                                    <h3 id="projtitle"></h3>
                                     <p>
-                                        <a id="projlink" href="https://github.com/linj2314/NutritionMERN" target="_blank">
+                                        <a id="projlink" href="" target="_blank">
                                             <img src="github_logo.png" style="width: 3%; height: 3%;">
                                             <span>view in Github</span>
                                         </a>
                                     </p>
                                     <p id="content">
-                                        A full-stack application made with MERN (MongoDB, ExpressJS, ReactJS, and Node.js) that
-                                        allows users to look up various foods and track the nutrients in them. Works by first 
-                                        utilizing a search bar to search for food, then selecting the quantity consumed, and 
-                                        then finally adding it to a list with other foods consumed. 
+                                         
                                     </p>
-                                    <p id="skills">Skills: MongoDB, ExpressJS, ReactJS, Node.js</p>
+                                    <p id="skills"></p>
                                 </div>
                             </div>
                         <script>
@@ -165,13 +164,13 @@
 
                                 switch(x) {
                                     case 0:
-                                        title.innerHTML = `Nutrition MERN`;
-                                        link.setAttribute("href", "https://github.com/linj2314/NutritionMERN");
-                                        content.innerHTML = `A full-stack application made with MERN (MongoDB, ExpressJS, ReactJS, and Node.js) that
-                                                            allows users to look up various foods and track the nutrients in them. Works by first 
-                                                            utilizing a search bar to search for food, then selecting the quantity consumed, and 
-                                                            then finally adding it to a list with other foods consumed. `;
-                                        skills.innerHTML = `Skills: MongoDB, ExpressJS, ReactJS, Node.js`;
+                                        title.innerHTML = `Fantasy Swim`;
+                                        link.setAttribute("href", "https://github.com/linj2314/fantasy_swim");
+                                        content.innerHTML = `A full stack MERN application modeled after fantasy sport games. This
+                                                            fantasy sports game is for swimmers, and allows users to draft a team
+                                                            of anyone who has an account on Swimcloud. Users can customize how long leagues
+                                                            last and scoring is calculated based on performances.`;
+                                        skills.innerHTML = `Skills: MongoDB, ExpressJS, ReactJS, Node.js, Web Scraping`;
                                         break;
                                     case 1:
                                         title.innerHTML = `Various Classwork Projects`;
@@ -203,6 +202,7 @@
                                         break;
                                 }
                             }
+                            updateState(0);
                         </script>
                     </div>
                 </div>
