@@ -128,10 +128,9 @@
                         <h2>Projects</h2>
                             <div class="border border-indigo">
                                 <nav class="nav flex-column p-2">
-                                    <button class="nav-link border-0 border-bottom-indigo text-start projbutton active" onclick="updateState(0)" style="color: white">Nutrition MERN</button>
-                                    <button class="nav-link border-0 border-bottom-indigo text-start projbutton" onclick="updateState(1)" style="color: white">Various Classwork Projects</button>
-                                    <button class="nav-link border-0 border-bottom-indigo text-start projbutton" onclick="updateState(2)" style="color: white">Arbitrage Bot</button>
-                                    <button class="nav-link border-0 text-start projbutton" onclick="updateState(3)" style="color: white">Biopharm Roulette</button>
+                                    <button class="nav-link border-0 border-bottom-indigo text-start projbutton active" onclick="updateState(0)" style="color: white">Fantasy Swim</button>
+                                    <button class="nav-link border-0 border-bottom-indigo text-start projbutton" onclick="updateState(1)" style="color: white">Application Bot</button>
+                                    <button class="nav-link border-0 text-start projbutton" onclick="updateState(2)" style="color: white">C++ ANN/CNN</button>
                                 </nav>
                                 <hr style="width: 95%; margin-left: 2.5%; border-width: 2px">
                                 <div class="p-3">
@@ -173,32 +172,23 @@
                                         skills.innerHTML = `Skills: MongoDB, ExpressJS, ReactJS, Node.js, Web Scraping`;
                                         break;
                                     case 1:
-                                        title.innerHTML = `Various Classwork Projects`;
-                                        link.style.display = "none";
-                                        content.innerHTML = `A collection of projects from my Intro to Programming and Data Structures class. The 
-                                                            projects include a fully functional program that allows users to play Euchre, and the 
-                                                            implementation of a map using a BST for the purpose of creating a machine learning 
-                                                            algorithm that can read posts on Piazza and tag them with the correct subject. `;
-                                        skills.innerHTML = `Skills: C/C++, Various Data Structures, Recursion, Inheritance, Pointers and References,
-                                                            Templates, Dynamic Memory Management, etc.`;
+                                        title.innerHTML = `Application Bot`;
+                                        link.setAttribute("href", "https://github.com/linj2314/application_bot");
+                                        content.innerHTML = `A python script that opens a headless browser using Selenium and fills out job applications
+                                                            automatically on sites like Workday, Greenhouse, and Lever. Utilizes a chatbot to parse 
+                                                            questions and returns the corresponding information. Organized into a Python package for
+                                                            easier maintenance and reusability.`;
+                                        skills.innerHTML = `Skills: Python, Web Scraping`;
                                         break;
                                     case 2:
-                                        title.innerHTML = `Arbitrage Bot`;
-                                        link.setAttribute("href", "https://github.com/linj2314/arbitragebot");
-                                        content.innerHTML = `A python script that performs arbitrage between BTC/USD, BTC/ETH, and ETH/USD using 
-                                                            Alpaca's Trading API and asynchronous programming. Receives real time quote data from
-                                                            Alpaca's Market Data API and performs calculations to determine if arbitrage is appropriate. `;
-                                        skills.innerHTML = `Skills: Python, APIs, Asynchronous Programming`;
-                                        break;
-                                    case 3:
-                                        title.innerHTML = `Biopharm Roulette`;
-                                        link.setAttribute("href", "https://github.com/linj2314/biopharm_roulette");
-                                        content.innerHTML = `A for-fun project that webscrapes biopharmacy stocks with upcoming catalyst
-                                                            events from biopharmcatalyst.com using Selenium, then short sells those stocks
-                                                            using Alpaca's Trading API if deemed eligible to be short sold. Only stocks 
-                                                            that are in phase 2 of clinical testing and within 3 days of the current 
-                                                            date will be short sold. `;
-                                        skills.innerHTML = `Skills: Python, API, Webscraping`;
+                                        title.innerHTML = `C++ ANN/CNN`;
+                                        link.setAttribute("href", "https://github.com/linj2314/cpp_nn");
+                                        content.innerHTML = `A pet project meant for learning about the math behind neural networks. I used a 
+                                                            MNIST like dataset of Simpson's characters (significantly more complex than the tradititional MNIST)
+                                                            with the goal of coding a model to classify these images using only C++ and the stdlib. I initially coded
+                                                            an ANN, but once I realized that this model was not strong enough to handle the classification, I switched
+                                                            to a CNN for more efficient and effective computation.`;
+                                        skills.innerHTML = `Skills: C++, Machine Learning`;
                                         break;
                                 }
                             }
